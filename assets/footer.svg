@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="100" viewBox="0 0 1200 100" fill="none" role="img" aria-labelledby="footerTitle">
+  <title id="footerTitle">Nithish S S — System Termination</title>
+  <defs>
+    <filter id="fLaserGlow" x="-10%" y="-30%" width="120%" height="160%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Container Surface -->
+  <rect x="2" y="2" width="1196" height="96" rx="14" fill="#030305" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1.2"/>
+
+  <!-- Thin Laser Divider Line with Endpoint ────────────────────────● -->
+  <line x1="40" y1="20" x2="1160" y2="20" stroke="#252730" stroke-width="1"/>
+  <line x1="40" y1="20" x2="820" y2="20" stroke="#FF1744" stroke-width="1.6" filter="url(#fLaserGlow)">
+    <animate attributeName="x2" values="300;1160;300" dur="6s" repeatCount="indefinite"/>
+  </line>
+  <!-- Single White-Hot Laser Endpoint -->
+  <g>
+    <circle cx="820" cy="20" r="6" fill="#FF003C" opacity="0.6" filter="url(#fLaserGlow)">
+      <animate attributeName="cx" values="300;1160;300" dur="6s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="820" cy="20" r="3" fill="#FF1744">
+      <animate attributeName="cx" values="300;1160;300" dur="6s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="820" cy="20" r="1.4" fill="#FFFFFF">
+      <animate attributeName="cx" values="300;1160;300" dur="6s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Corner Tech Accent Ticks -->
+  <path d="M 20 30 L 20 20 L 30 20" fill="none" stroke="#FF1744" stroke-width="1.5"/>
+  <path d="M 1180 30 L 1180 20 L 1170 20" fill="none" stroke="#FF1744" stroke-width="1.5"/>
+
+  <!-- Left: Identity -->
+  <text x="44" y="55" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="18" font-weight="800" letter-spacing="1">NITHISH S S</text>
+  <text x="44" y="75" fill="#9CA3AF" font-family="'Consolas', monospace" font-size="11" letter-spacing="1.8">FULL-STACK <tspan fill="#FF1744">//</tspan> AI SYSTEM BUILDER <tspan fill="#FF1744">//</tspan> ARCHITECT</text>
+
+  <!-- Center: Philosophy Pill -->
+  <g transform="translate(600, 58)" text-anchor="middle">
+    <rect x="-115" y="-15" width="230" height="26" rx="6" fill="#0A0B10" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1"/>
+    <circle cx="-88" cy="-2" r="3" fill="#FF1744" filter="url(#fLaserGlow)"/>
+    <circle cx="-88" cy="-2" r="1.2" fill="#FFFFFF"/>
+    <text x="8" y="2" fill="#E5E7EB" font-family="'Consolas', monospace" font-size="11" font-weight="700" letter-spacing="1.5">BUILD • SHIP • ITERATE</text>
+  </g>
+
+  <!-- Right: GitHub Handle -->
+  <g transform="translate(1156, 58)" text-anchor="end">
+    <text x="0" y="-1" fill="#FF1744" font-family="'Consolas', monospace" font-size="13" font-weight="700">github.com/NITHISH0728</text>
+    <text x="0" y="17" fill="#9CA3AF" font-family="'Consolas', monospace" font-size="10" letter-spacing="1">SYSTEM TERMINATION // 0xFF</text>
+  </g>
+</svg>

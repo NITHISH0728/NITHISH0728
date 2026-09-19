@@ -1,0 +1,134 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="230" viewBox="0 0 1080 230" fill="none" role="img" aria-labelledby="archTitle archDesc">
+  <title id="archTitle">Engineering Workflow Pipeline</title>
+  <desc id="archDesc">Horizontal cybernetic engineering pipeline with active optical red laser beam path.</desc>
+  <defs>
+    <filter id="archLaserGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    <filter id="archLaserBlur" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="10" result="ambBlur"/>
+    </filter>
+    <pattern id="archGrid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="12" cy="12" r="0.6" fill="#FFFFFF" fill-opacity="0.04"/>
+    </pattern>
+    <path id="archPerimeter" d="M 20 2 H 1060 A 18 18 0 0 1 1078 20 V 210 A 18 18 0 0 1 1060 228 H 20 A 18 18 0 0 1 2 210 V 20 A 18 18 0 0 1 20 2 Z" />
+  </defs>
+
+  <!-- Surface Base -->
+  <rect x="2" y="2" width="1076" height="226" rx="18" fill="#030305"/>
+  <rect x="2" y="2" width="1076" height="226" rx="18" fill="url(#archGrid)"/>
+
+  <!-- Base Border (Neutral) -->
+  <use href="#archPerimeter" fill="none" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1.2"/>
+
+  <!-- Traveling Laser along border -->
+  <use href="#archPerimeter" fill="none" stroke="#FF1744" stroke-width="2" stroke-linecap="round" stroke-dasharray="160 2420" filter="url(#archLaserGlow)">
+    <animate attributeName="stroke-dashoffset" values="0;-2580" dur="5.5s" repeatCount="indefinite"/>
+  </use>
+  <g>
+    <animateMotion dur="5.5s" repeatCount="indefinite">
+      <mpath href="#archPerimeter"/>
+    </animateMotion>
+    <circle cx="0" cy="0" r="12" fill="#FF003C" opacity="0.6" filter="url(#archLaserGlow)"/>
+    <circle cx="0" cy="0" r="4.5" fill="#FF1744"/>
+    <circle cx="0" cy="0" r="2" fill="#FFFFFF"/>
+  </g>
+
+  <!-- Header line -->
+  <g transform="translate(42, 38)">
+    <circle cx="0" cy="0" r="3.5" fill="#FF1744"/>
+    <circle cx="0" cy="0" r="1.5" fill="#FFFFFF"/>
+    <text x="14" y="4" fill="#FF1744" font-family="'Consolas', monospace" font-size="11.5" font-weight="700" letter-spacing="2">PIPELINE // SYSTEM DESIGN TO ITERATION</text>
+    <text x="996" y="4" text-anchor="end" fill="#9CA3AF" font-family="'Consolas', monospace" font-size="11" letter-spacing="1">END-TO-END EXECUTION CYCLE</text>
+  </g>
+  <line x1="42" y1="52" x2="1038" y2="52" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1"/>
+
+  <!-- Neutral Backbone Track -->
+  <line x1="80" y1="135" x2="1000" y2="135" stroke="#20222B" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- ACTIVE CONTINUOUS RED LASER BEAM PATH -->
+  <line x1="80" y1="135" x2="1000" y2="135" stroke="#FF1744" stroke-width="2" stroke-linecap="round" filter="url(#archLaserGlow)"/>
+  <!-- Traveling laser pulse along the pipeline -->
+  <line x1="80" y1="135" x2="200" y2="135" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round">
+    <animate attributeName="x1" values="80;920;80" dur="4s" repeatCount="indefinite"/>
+    <animate attributeName="x2" values="160;1000;160" dur="4s" repeatCount="indefinite"/>
+  </line>
+
+  <!-- STAGE NODES -->
+  <!-- 01 IDEA -->
+  <g transform="translate(45, 95)">
+    <rect x="0" y="0" width="105" height="80" rx="10" fill="#08090D" stroke="rgba(255,255,255,0.08)" stroke-width="1.2"/>
+    <text x="14" y="24" fill="#FF1744" font-family="'Consolas', monospace" font-size="11" font-weight="700">01</text>
+    <text x="14" y="46" fill="#FFFFFF" font-family="-apple-system, sans-serif" font-size="12" font-weight="700" letter-spacing="0.5">IDEA</text>
+    <text x="14" y="64" fill="#9CA3AF" font-family="-apple-system, sans-serif" font-size="9.5">Problem Space</text>
+    <circle cx="92" cy="20" r="3" fill="#FF1744" opacity="0.4"/>
+  </g>
+
+  <!-- 02 RESEARCH -->
+  <g transform="translate(170, 95)">
+    <rect x="0" y="0" width="105" height="80" rx="10" fill="#08090D" stroke="rgba(255,255,255,0.08)" stroke-width="1.2"/>
+    <text x="14" y="24" fill="#FF1744" font-family="'Consolas', monospace" font-size="11" font-weight="700">02</text>
+    <text x="14" y="46" fill="#FFFFFF" font-family="-apple-system, sans-serif" font-size="12" font-weight="700" letter-spacing="0.5">RESEARCH</text>
+    <text x="14" y="64" fill="#9CA3AF" font-family="-apple-system, sans-serif" font-size="9.5">Data &amp; Feasibility</text>
+    <circle cx="92" cy="20" r="3" fill="#FF1744" opacity="0.4"/>
+  </g>
+
+  <!-- 03 ARCHITECTURE -->
+  <g transform="translate(295, 95)">
+    <rect x="0" y="0" width="112" height="80" rx="10" fill="#08090D" stroke="#FF1744" stroke-opacity="0.4" stroke-width="1.2"/>
+    <text x="14" y="24" fill="#FF1744" font-family="'Consolas', monospace" font-size="11" font-weight="700">03</text>
+    <text x="14" y="46" fill="#FFFFFF" font-family="-apple-system, sans-serif" font-size="12" font-weight="700" letter-spacing="0.5">ARCHITECT</text>
+    <text x="14" y="64" fill="#9CA3AF" font-family="-apple-system, sans-serif" font-size="9.5">APIs &amp; Boundaries</text>
+    <circle cx="98" cy="20" r="3" fill="#FF1744" opacity="0.6"/>
+  </g>
+
+  <!-- 04 PROTOTYPE -->
+  <g transform="translate(427, 95)">
+    <rect x="0" y="0" width="105" height="80" rx="10" fill="#08090D" stroke="rgba(255,255,255,0.08)" stroke-width="1.2"/>
+    <text x="14" y="24" fill="#FF1744" font-family="'Consolas', monospace" font-size="11" font-weight="700">04</text>
+    <text x="14" y="46" fill="#FFFFFF" font-family="-apple-system, sans-serif" font-size="12" font-weight="700" letter-spacing="0.5">PROTOTYPE</text>
+    <text x="14" y="64" fill="#9CA3AF" font-family="-apple-system, sans-serif" font-size="9.5">Usable Path</text>
+    <circle cx="92" cy="20" r="3" fill="#FF1744" opacity="0.4"/>
+  </g>
+
+  <!-- 05 BUILD -->
+  <g transform="translate(552, 95)">
+    <rect x="0" y="0" width="105" height="80" rx="10" fill="#08090D" stroke="rgba(255,255,255,0.08)" stroke-width="1.2"/>
+    <text x="14" y="24" fill="#FF1744" font-family="'Consolas', monospace" font-size="11" font-weight="700">05</text>
+    <text x="14" y="46" fill="#FFFFFF" font-family="-apple-system, sans-serif" font-size="12" font-weight="700" letter-spacing="0.5">BUILD</text>
+    <text x="14" y="64" fill="#9CA3AF" font-family="-apple-system, sans-serif" font-size="9.5">Full-Stack Core</text>
+    <circle cx="92" cy="20" r="3" fill="#FF1744" opacity="0.5"/>
+  </g>
+
+  <!-- 06 TEST -->
+  <g transform="translate(677, 95)">
+    <rect x="0" y="0" width="105" height="80" rx="10" fill="#08090D" stroke="rgba(255,255,255,0.08)" stroke-width="1.2"/>
+    <text x="14" y="24" fill="#FF1744" font-family="'Consolas', monospace" font-size="11" font-weight="700">06</text>
+    <text x="14" y="46" fill="#FFFFFF" font-family="-apple-system, sans-serif" font-size="12" font-weight="700" letter-spacing="0.5">TEST</text>
+    <text x="14" y="64" fill="#9CA3AF" font-family="-apple-system, sans-serif" font-size="9.5">Validate Flow</text>
+    <circle cx="92" cy="20" r="3" fill="#FF1744" opacity="0.5"/>
+  </g>
+
+  <!-- 07 DEPLOY -->
+  <g transform="translate(802, 95)">
+    <rect x="0" y="0" width="105" height="80" rx="10" fill="#08090D" stroke="rgba(255,255,255,0.08)" stroke-width="1.2"/>
+    <text x="14" y="24" fill="#FF1744" font-family="'Consolas', monospace" font-size="11" font-weight="700">07</text>
+    <text x="14" y="46" fill="#FFFFFF" font-family="-apple-system, sans-serif" font-size="12" font-weight="700" letter-spacing="0.5">DEPLOY</text>
+    <text x="14" y="64" fill="#9CA3AF" font-family="-apple-system, sans-serif" font-size="9.5">Production Live</text>
+    <circle cx="92" cy="20" r="3" fill="#FF1744" opacity="0.6"/>
+  </g>
+
+  <!-- 08 ITERATE (Active Luminous Laser Node) -->
+  <g transform="translate(927, 95)">
+    <rect x="0" y="0" width="108" height="80" rx="10" fill="#FF003C" opacity="0.18" filter="url(#archLaserGlow)"/>
+    <rect x="0" y="0" width="108" height="80" rx="10" fill="#0E080A" stroke="#FF1744" stroke-width="1.8"/>
+    <text x="14" y="24" fill="#FF6B80" font-family="'Consolas', monospace" font-size="11" font-weight="700">08</text>
+    <text x="14" y="46" fill="#FFFFFF" font-family="-apple-system, sans-serif" font-size="12" font-weight="800" letter-spacing="0.5">ITERATE</text>
+    <text x="14" y="64" fill="#FF6B80" font-family="-apple-system, sans-serif" font-size="9.5">Refine &amp; Scale</text>
+    <!-- White-hot center laser head -->
+    <circle cx="92" cy="20" r="5" fill="#FF003C" filter="url(#archLaserGlow)"/>
+    <circle cx="92" cy="20" r="2.5" fill="#FF1744"/>
+    <circle cx="92" cy="20" r="1.2" fill="#FFFFFF"/>
+  </g>
+</svg>
